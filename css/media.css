@@ -1,0 +1,414 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+	html {
+		font-size: 9px;
+	}
+	.main_content img {
+		max-width: 600px;
+	}
+	h1 {
+		left: 30px;
+		padding-top: 6rem;
+	}
+	.gallery_wrapper img {
+		width: 290px;
+	}
+	.price br {
+		display: none!important;
+	}
+	.price h4 {
+		font-size: 2rem;
+	}
+	.price h4 span {
+		display: block;
+	}
+	.gift img {
+		width: 100%;
+	}
+	.discount img {
+		width: 100%;
+	}
+	.gift img.shadow,
+	.discount img.shadow {
+		display: none;
+	}
+	.discount p, .discount ul li span {
+		font-size: 2.4rem;
+	}
+	.promo ul li span {
+		font-size: 2rem;
+	}
+	.promo h4 {
+		font-size: 2.2rem;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	html {
+		font-size: 8px;
+	}
+	p {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 500px;
+	}
+	/*section {
+		padding: 60px 0;
+	}*/
+	.lang {
+		text-align: center;
+		top: 60px;
+		left: 0;
+		margin: auto;
+	}
+	main {
+		height: 540px;
+	}
+	.main_content {
+		margin-top: 16rem;
+	}
+	.main_content img {
+		max-width: 400px;
+	}
+	h1 {
+		padding-top: 2rem;
+	}
+	.gallery_wrapper img {
+		width: 220px;
+	}
+	.price h5 {
+		padding: 0;
+	}
+	.price h4 {
+		font-size: 1.8rem;
+	}
+	.price p {
+		padding: 0;
+	}
+	.promo p {
+		padding: 0;
+		height: 180px;
+	}
+	.promo ul {
+		padding: 0 0 0 20px;
+	}
+	.contact p {
+		max-width: 100%;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	html {
+		font-size: 7.5px;
+	}
+	section {
+		padding: 40px 0;
+	}
+	.main_contact {
+		padding: 0 15px;
+	}
+	.main_content img {
+		float: none;
+		display: block;
+		margin: 0 auto 5rem;
+	}
+	h1 {
+		left: 0;
+		text-align: center;
+		margin-bottom: 7rem;
+		padding-top: 0;
+	}
+	main {
+		height: auto;
+	}
+	.main_contact {
+		display: none;
+	}
+	.top_desc {
+		margin-top: 8rem;
+	}
+	.lang {
+		left: auto;
+		top: 8px;
+		right: 70px;
+	}
+	.toggle_btn {
+		display: block;
+		z-index: 300;
+	}
+	.main_content {
+		margin-top: 6rem;
+	}
+	.menu {
+		display: none;
+		position: fixed;
+		width: 100%;
+		z-index: 200;
+		height: auto;
+		top: 0;
+		border-bottom: 2px solid #e0a326;
+		-webkit-box-shadow: 0 5px 12px rgba(0,0,0,.5);
+		-moz-box-shadow: 0 5px 12px rgba(0,0,0,.5);
+		-ms-box-shadow: 0 5px 12px rgba(0,0,0,.5);
+		box-shadow: 0 5px 12px rgba(0,0,0,.5);
+	}
+	.menu ul {
+		display: block;
+	}
+	.menu ul li {
+		padding: 10px 0;
+		
+	}
+	.menu ul li br {
+		display: none;
+	}
+	.gallery_wrapper {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: space-around;
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: space-around;
+		justify-content: space-around;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.gallery_wrapper img {
+		width: 270px;
+		height: 270px;
+		max-height: 1000px;
+		margin-bottom: 3rem;
+	}
+	.price img {
+		display: none!important;
+	}
+	.price p {
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.price .col-sm-4 {
+		margin-bottom: 10rem;
+	}
+	.price .col-sm-4:before {
+		content: "";
+		position: absolute;
+		height: 2px;
+		background-color: #e0a326;
+		bottom: -5rem;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 100px;
+	}
+	.price .col-sm-4:last-of-type:before {
+		display: none;
+	}
+	.price .col-sm-4:last-of-type {
+		margin-bottom: 0;
+	}
+	.price h5 {
+		font-size: 2rem;
+	}
+	.gift img {
+		display: none;
+	}
+	.gift, .gift h3 {
+		text-align: center;
+	}
+	.personal {
+		display: none;
+	}
+	.discount img {
+		display: none;
+	}
+	.discount p {
+		text-align: center;
+	}
+	.discount p br {
+		display: none;
+	}
+	.discount h5 {
+		margin-top: 3rem;
+	}
+	.promo {
+		text-align: center;
+	}
+	.promo p {
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
+	}
+	.promo p br {
+		display: none;
+	}
+	.promo_pict {
+		height: auto;
+	}
+	.promo .col-sm-4 {
+		margin-bottom: 8rem;
+	}
+	.promo .col-sm-4:before {
+		content: "";
+		position: absolute;
+		height: 2px;
+		background-color: #762b10;
+		bottom: -4rem;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 100px;
+	}
+	.promo .col-sm-4:last-of-type:before {
+		display: none;
+	}
+	.promo .col-sm-4:last-of-type img {
+		top: 0;
+	}
+	.promo ul {
+		padding: 0;
+		list-style-type: none;
+	}
+	.contact p {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	.contact a:before {
+		display: none;
+	}
+	.contact p a {
+		display: block;
+		margin-left: 0;
+	}
+	.contact p a:first-of-type {
+		margin-bottom: 1.5rem;
+	}
+	.map img:hover {
+		-webkit-transform: scale(2.5);
+		-moz-transform: scale(2.5);
+		-ms-transform: scale(2.5);
+		transform: scale(2.5);
+	}
+	.gift h3 {
+		margin-top: 0;
+	}
+}
+@media only screen and (max-width : 570px) {
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.main_content img {
+		max-width: 100%;
+	}
+	footer .footer_wrapper {
+		height: auto;
+		display: block;
+		text-align: center;
+		padding: 20px 0;
+	}
+	footer .footer_wrapper .policy {
+		margin-top: 2rem;
+	}
+	section h3 {
+		font-size: 4rem;
+	}
+	.discount h5 {
+		font-size: 2.4rem;
+	}
+	.discount h5 br {
+		display: none;
+	}
+	.promo h5 {
+		margin: 0;
+	}
+	.contact p {
+		font-size: 1.8rem;
+	}
+	.gift {
+		padding: 5rem 0;
+	}
+}
+@media only screen and (max-width : 380px) {
+	.top_desc {
+		font-size: 2.6rem;
+		line-height: 3.6rem;
+	}
+	h1 {
+		font-size: 4rem;
+		line-height: 5.5rem;
+	}
+	section h3 {
+		font-size: 3.2rem;
+	}
+	.gift h3 {
+		line-height: normal;
+	}
+	.gift p {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	.contact p {
+		font-size: 2rem;
+	}
+	.price h4 {
+		margin-bottom: 0;
+	}
+	.price .col-sm-4 * {
+		display: none;
+	}
+	.price .col-sm-4 h4 {
+		display: block;
+		font-size: 2.2rem;
+	}
+	.price .col-sm-4:before {
+		width: 100%;
+	}
+	.price .col-sm-4:first-of-type * {
+		display: block;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.container {
+		width: 1200px;
+	}
+}
