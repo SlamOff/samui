@@ -4,7 +4,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $c = true;
 if ( $method === 'POST' ) {
 
-	$project_name = "Bepas";
+	$project_name = "Samui";
 	$admin_email  = "vetalsd2@gmail.com";
 	$form_subject = "Заявка с лендинга";
 
@@ -20,7 +20,7 @@ if ( $method === 'POST' ) {
 }
 } else if ( $method === 'GET' ) {
 
-	$project_name = "Bepas";
+	$project_name = "Samui";
 	$admin_email  = "vetalsd2@gmail.com";
 	$form_subject = "Заявка с лендинга";
 

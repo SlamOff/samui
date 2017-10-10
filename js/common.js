@@ -10,8 +10,9 @@ $(document).ready(function() {
 		});
  	});
 	window.onscroll = function () {
-		var scrolled = window.pageYOffset || document.documentElement.scrollTop,
+		var scrolled = window.pageYOffset - 100 || document.documentElement.scrollTop - 100,
 			main = document.querySelector('main');
+			//console.log(scrolled);
 		if (scrolled > $(main).height() && $(window).width() > 768) {
 			$('.menu--scrolled').fadeIn();
 			$('.menu').fadeOut();
@@ -68,14 +69,14 @@ $(document).ready(function() {
 	  setTimeout(update, 0);
 	}
 	updater(document.getElementById("days"),
-document.getElementById("hours"), document.getElementById("minutes"),
-document.getElementById("seconds"));
+	document.getElementById("hours"), document.getElementById("minutes"),
+	document.getElementById("seconds"));
 
 
 
-	/*
 
-	$('.scroll').click( function(){
+	$('.scroll').click( function(e){
+		e.preventDefault();
 	var scrollEl = $(this).attr('href');
 		if ($(scrollEl).length != 0) {
 			$('html, body').animate({ scrollTop: $(scrollEl).offset().top }, 800);
@@ -84,6 +85,7 @@ document.getElementById("seconds"));
 	});
 
 
+	$('.datetimepicker').datetimepicker();
 	//popup
 	$('.popup').magnificPopup({
 		type: 'inline'
@@ -101,7 +103,20 @@ document.getElementById("seconds"));
 	jQuery(function($){
 		$('.phone').mask('+38(099) 999-9999');
 	});
-
+	$('.slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		nextArrow: '.next',
+		prevArrow: '.prev',
+		responsive: [
+			{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 1
+			}
+			}
+		]
+	});
 
 
 	/*

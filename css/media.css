@@ -226,7 +226,17 @@
 		text-align: center;
 	}
 	.personal {
-		display: none;
+		text-align: center;
+	}
+	.personal .cert img {
+		border: 1px solid #ddd;
+		margin-top: 2rem;
+	}
+	.gallery_wrapper img:hover {
+		transform: none;
+		border-radius: 0;
+		border: 0;
+		box-shadow: none;
 	}
 	.discount img {
 		display: none;
@@ -303,7 +313,18 @@
 	}
 }
 @media only screen and (max-width : 570px) {
-
+	.slider_wrapper {
+		display: block;
+		padding-bottom: 50px;
+		margin: 0 auto;
+		max-width: 370px;
+	}
+	/*.slider_wrapper img {
+		max-width: 370px;
+	}*/
+	.gallery_wrapper {
+		display: none;
+	}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
