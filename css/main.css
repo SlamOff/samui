@@ -287,7 +287,7 @@ label.error {
 	font-size: 1.8rem;
 	color: #000;
 }
-.form input, select {
+.form input, .form select {
 	width: 100%;
 	max-width: 370px;
 	-webkit-border-radius: 3px;
@@ -300,6 +300,22 @@ label.error {
 	height: 60px;
 	border: 0;
 	text-indent: 3rem;
+}
+.form .wrap {
+	position: relative;
+	max-width: 370px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form .wrap:before {
+	position: absolute;
+	content: "▼";
+	right: 4px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 10px;
+	line-height: 94px;
 }
 .form button {
 	width: 100%;

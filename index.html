@@ -170,7 +170,7 @@
 				</div>
 				<div class="col-sm-4">
 					<img src="img/price_6.jpg" alt="">
-					<h4>Тайський масаж <br>з ефирнімі олиямі <br>в 4 руки</h4>
+					<h4>Тайський масаж <br>з ефірними оліями <br>в 4 руки</h4>
 					<h5>60 хв – 1150 грн <br>90 хв – 1500 грн</h5>
 					<p>Цей вид масажу виконується одночасно двома фахівцями. Чудово розслабляє, знімає <br>втому та покращує емоційний <br>стан.</p>
 				</div>
@@ -344,12 +344,14 @@
 			<p>щоб записатись на масаж</p>
 			<form method="post" class="form" id="bookForm" action="mail.php">
 				<input type="hidden" name="whatform" value="Форма - Записаться на массаж" />
-				<input type="text" name="name" placeholder="Ваше имя" />
+				<input type="text" name="name" placeholder="Ваше ім'я" />
 				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
 				<input type="email" name="email" placeholder="Ваш e-mail" />
-				<input class="datetimepicker" placeholder="Выберите дату и время" name="date" type="text">
+				<div class="wrap">
+					<input class="datetimepicker" placeholder="Оберіть час і дату" name="date" type="text">
+				</div>
 				<select name="master">
-					<option value="" disabled selected>Выберите мастера</option>
+					<option value="" disabled selected>Оберіть масажиста</option>
 					<option value="">Майстер Енні</option>
 					<option value="">Майстер Бі</option>
 				</select>
