@@ -10,17 +10,18 @@ $(document).ready(function() {
 		});
  	});
 	window.onscroll = function () {
-		var scrolled = window.pageYOffset - 100 || document.documentElement.scrollTop - 100,
+		var scrolled = window.pageYOffset || document.documentElement.scrollTop,
 			main = document.querySelector('main');
 			//console.log(scrolled);
 		if (scrolled > $(main).height() && $(window).width() > 768) {
 			$('.menu--scrolled').fadeIn();
-			$('.menu').fadeOut();
+			// $('.menu').fadeOut();
 		} else if (scrolled <= $(main).height() && $(window).width() > 768) {
 			$('.menu--scrolled').fadeOut();
-			$('.menu').show();
+			// $('.menu').show();
 		}
 	};
+	// $('main i').click(function(){});
 	$('.toggle_btn').click(function(){
 		$(".sandwich").toggleClass("active");
 		if($('.menu').is(':visible')) {
@@ -108,6 +109,8 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		nextArrow: '.next',
 		prevArrow: '.prev',
+		autoplay: true,
+		autoplaySpeed: 3000,
 		responsive: [
 			{
 			breakpoint: 992,

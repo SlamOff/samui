@@ -34,7 +34,7 @@ p {
 .next {
 	font-size: 40px;
 	color: #e0a326;
-	right: 0;
+	left: 60%;
 }
 .next:hover {
 	background-image: url("../img/next_hover.png");
@@ -42,7 +42,7 @@ p {
 .prev {
 	font-size: 40px;
 	color: #e0a326;
-	left: 0;
+	right: 60%;
 }
 .prev:hover {
 	background-image: url("../img/prev_hover.png");
@@ -177,6 +177,7 @@ section h3 {
 	margin-top: 0;
 	margin-bottom: 2.5rem;
 	color: #762b10;
+	text-transform: uppercase;
 }
 section h3.yellow {
 	color: #e0a326;
@@ -327,6 +328,7 @@ label.error {
 	line-height: 4.6rem;
 	font-weight: 500;
 	text-align: center;
+	text-transform: uppercase;
 }
 h1{
 	font: 5rem "PlayfairDisplay", sans-serif;
@@ -345,6 +347,20 @@ main {
 	background-repeat: no-repeat;
 	background-position: center top;
 	padding-top: 15px;
+	position: relative;
+}
+main i {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	width: 40px!important;
+	z-index: 20;
+	height: 40px;
+	margin: auto;
+	width: auto;
+	text-align: center;
+	font-size: 40px!important;
 }
 main .container {
 	height: 100%;
@@ -417,7 +433,7 @@ main .container {
 .lang {
 	position: absolute;
 	right: 0;
-	top: 15px;
+	top: 8px;
 }
 .lang li {
 	text-transform: uppercase;
@@ -434,6 +450,7 @@ main .container {
 	background-color: #411e16;
 	height: 70px;
 	color: #e0a326;
+	display: none;
 }
 .menu--scrolled {
 	position: fixed;
@@ -452,15 +469,17 @@ main .container {
 }
 .logo {
 	width: 16.66666667%;
+	height: 100%;
 }
 .logo img {
 	position: relative;
 	top: 5px;
+	max-height: 100%;
 }
 .top_menu {
 	position: absolute;
 	right: 0;
-	top: 20px;
+	top: 10px;
 }
 .top_menu div {
 	float: left;
@@ -539,7 +558,7 @@ main .container {
 	color: #c78f23;
 }
 .menu--scrolled_wrapper {
-	height: 160px;
+	height: 110px;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -645,10 +664,10 @@ main .container {
 	-moz-box-shadow: 0px 0px 12px rgba(0,0,0,.7);
 	-ms-box-shadow: 0px 0px 12px rgba(0,0,0,.7);
 	box-shadow: 0px 0px 12px rgba(0,0,0,.7);
-	-webkit-border-radius: 3px;
+	/*-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
-	border-radius: 3px;
+	border-radius: 3px;*/
 	border: 1px solid #fff;
 }
 .price {
@@ -714,6 +733,13 @@ main .container {
 	font-size: 3.4rem;
 	color: #e0a326;
 }
+.gift p.gift_exp {
+	line-height: 3rem;
+	font-size: 2rem;
+	color: #cfb5ac;
+	font-weight: normal;
+	margin-top: 2rem;
+}
 .personal {
 	color: #762b10;
 	letter-spacing: .03em;
@@ -728,6 +754,10 @@ main .container {
 .personal .cert img {
 	width: 100%;
 	max-width: 670px;
+}
+.personal .photo img {
+	width: 100%;
+	max-width: 210px;
 }
 .personal h3 {
 	margin-bottom: 3.6rem;
@@ -841,13 +871,13 @@ main .container {
 .contact {
 	text-align: center;
 	background-color: #411e16;
-	padding: 5rem 0 6rem;
+	padding: 4rem 0 3rem;
 }
 .contact p {
 	color: #d5c2b3;
-	font-size: 2.8rem;
+	font-size: 2rem;
 	line-height: 3.6rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 .contact p a {
 	position: relative;
@@ -873,8 +903,12 @@ main .container {
 }
 .map {
 	padding: 0;
+	height: 400px;
 }
 .map img {
 	display: block;
 	width: 100%;
+	height: 100%;
+	width: auto;
+	margin: 0 auto;
 }
