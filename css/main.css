@@ -343,8 +343,9 @@ h1{
 main {
 	background-image: url("../img/main.jpg");
 	color: #e0a326;
-	height: 740px;
-	background-repeat: no-repeat;
+	height: 100vh;
+	background-color: #5c2015;
+	/*background-repeat: no-repeat;*/
 	background-position: center top;
 	padding-top: 15px;
 	position: relative;
@@ -366,7 +367,7 @@ main .container {
 	height: 100%;
 }
 .main_content {
-	margin-top: 12rem;
+	margin-top: 10vh;
 }
 .main_contact {
 	position: absolute;
@@ -911,4 +912,5 @@ main .container {
 	height: 100%;
 	width: auto;
 	margin: 0 auto;
+	max-width: 100%;
 }

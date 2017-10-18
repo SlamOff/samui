@@ -5,6 +5,9 @@
 	html {
 		font-size: 9px;
 	}
+	.top_desc {
+		font-size: 3rem;
+	}
 	.main_content img {
 		max-width: 600px;
 	}
@@ -124,6 +127,9 @@
 	}
 	main {
 		height: auto;
+	}
+	main i {
+		bottom: 10px;
 	}
 	.main_contact {
 		display: none;
