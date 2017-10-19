@@ -13,14 +13,12 @@ $(document).ready(function() {
 		var scrolled = window.pageYOffset || document.documentElement.scrollTop,
 			scrolled2 = window.pageYOffset || document.documentElement.scrollTop,
 			main = document.querySelector('main');
-			console.log(scrolled);
-			console.log(scrolled2);
 		if (scrolled2 > $(main).height() && $(window).width() > 768) {
 			$('.menu--scrolled').fadeIn();
-			// $('.menu').fadeOut();
+			$('.menu').fadeOut();
 		} else if (scrolled2 <= $(main).height() && $(window).width() > 768) {
 			$('.menu--scrolled').fadeOut();
-			// $('.menu').show();
+			$('.menu').show();
 		}
 	};
 	// $('main i').click(function(){});

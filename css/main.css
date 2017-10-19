@@ -452,7 +452,7 @@ main .container {
 	background-color: #411e16;
 	height: 70px;
 	color: #e0a326;
-	display: none;
+	/*display: none;*/
 }
 .menu--scrolled {
 	position: fixed;
@@ -905,7 +905,7 @@ main .container {
 }
 .map {
 	padding: 0;
-	height: 400px;
+	height: 500px;
 }
 .map img {
 	display: block;
