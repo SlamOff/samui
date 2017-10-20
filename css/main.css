@@ -344,9 +344,10 @@ h1{
 main {
 	background-image: url("../img/main.jpg");
 	color: #e0a326;
-	height: 100vh;
+	/*height: 100vh;*/
+	height: 740px;
 	background-color: #5c2015;
-	/*background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
 	background-position: center top;
 	padding-top: 15px;
 	position: relative;
@@ -363,6 +364,7 @@ main i {
 	width: auto;
 	text-align: center;
 	font-size: 40px!important;
+	display: none!important;
 }
 main .container {
 	height: 100%;
